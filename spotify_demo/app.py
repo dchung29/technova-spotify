@@ -5,7 +5,7 @@ from spotipy.oauth2 import SpotifyOAuth
 
 technova_demo = Flask(__name__)
 
-technova_demo.secret_key = "4d8v6vso6rfvobnjk8i"
+technova_demo.secret_key = "qvudb83q7dgbadxn"
 technova_demo.config['SESSION_COOKIE'] = 'randomcookie'
 
 
