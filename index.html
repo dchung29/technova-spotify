@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Spotify Playlist Generator</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        function SubForm (){
+            $.ajax({
+                url:'https://api.apispreadsheets.com/data/17421/',
+                type:'post',
+                data:$("#myForm").serializeArray(),
+                success: function(){
+                  alert("Thank you for subscribing!")
+                },
+                error: function(){
+                  alert("There was an error.")
+                }
+            });
+        }
+        </script>
+
+
 </head>
 <body>
 
@@ -36,9 +58,12 @@
                         <h2>MOOD GENERATOR</h2>
                         <br>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                        <a href="#About" type="button" class="cta">ABOUT</a>
                     </div>
-                    <a href="#About" type="button" class="cta">ABOUT</a>
                 </header>
+            </div>
+            <div class="hero-image">
+                <img src="img/spotify_img.png" alt="" class="image-size"/>
             </div>
         </div>
     </section>
@@ -66,18 +91,20 @@
 
     <!--Download Section-->
     <section id="Download">
-        <div class="download-container">
+        <div class="download-container"> 
             <br>
             <h1>DOWNLOAD TODAY!</h1>
             <br>
             <p>How to download:</p>
             <br><br>
             <p>1. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <br>
+            <br><br>
             <p>2. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <br>
+            <br><br>
             <p>3. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <br><br><br>
+            <br><br>
+            <p>4. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <br><br><br><br><br><br><br>
             <a href="https://github.com/dchung29/technova-spotify" class="cta">DOWNLOAD</a>
 
             </div>
@@ -88,7 +115,19 @@
 
 
     <!--Contact Section-->
-    
+    <section id="Contact">
+        <div class="contact-container">
+            <h1>CONTACT US</h1>
+            <p>subscribe to "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="signup">
+            <form id="myForm">
+                <input name="Email" placeholder="Email"/>
+            </form>
+            <button onclick="SubForm()">Subscribe</button>
+            </div>
+            </div>
+
+    </section>
 
 
     <!--End of Contact Section-->
