@@ -1,0 +1,134 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition-property: background-color, grey;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.cta:hover{
+    color: white;
+    background-color: green;
+}
+
+/* Nav Section */
+
+#header nav{
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    width: 95vw;
+}
+
+#header .wrapper{
+    width: 1200px;
+    margin: 0;
+}
+
+#header .nav-container{
+    background-color: white;
+    height: 10vh;
+}
+
+/* Nav Section */
+
+
+
+
+/* Start of Hero Section */
+#hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    justify-content: flex-start;
+}
+
+
+#hero .hero-container{
+    background-color: white;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero .wrappers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+#hero .header{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero h2{
+    font-size: 5rem;
+    width: fit-content;
+    position: relative;
+    font-weight: 600;
+    line-height: 75px;
+    letter-spacing: 1rem;
+
+}
+
+#hero p{
+    font-size: 15px;
+    font-style: italic;
+    line-height: 42px;
+    width: 800px;
+}
+
+#hero .hero-image{
+    position: relative;    
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+/* End of Hero Section */
+
+/* Start of About Section */
+#About .about-container{
+    color: white;
+    padding: 100px;
+    background-color:#1db954;
+    text-align: center;
+}
+
+#About .about-container h1{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+#About .about-container p{
+    padding: 15px;
+    font-size: 15px
+}
+
+
+
+/* End of About Section */
