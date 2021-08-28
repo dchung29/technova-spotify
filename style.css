@@ -167,7 +167,7 @@ html {
     color: black;
     padding: 50px;
     background-color: white;
-    height: 90vh;
+    height: 130vh;
     text-align: center;
 }
 
@@ -179,6 +179,13 @@ html {
 
 #Download p{
     font-size: 18px;
+}
+
+#Download .download-container link{
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* End of Download Section */
