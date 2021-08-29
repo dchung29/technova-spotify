@@ -155,7 +155,11 @@ html {
 
 #About p{
     line-height: 42px;
-    font-size: 18px
+    font-size: 20px
+}
+
+#About .about-text{
+    padding: 15px;
 }
 
 /* End of About Section */
